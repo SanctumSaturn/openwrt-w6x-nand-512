@@ -13,15 +13,15 @@
 };
 
 &partitions {
-	partition@600000 {
-		label = "ubi";
-		reg = <0x600000 0xD200000>;
-		compatible = "linux,ubi";
+    partition@600000 {
+        label = "ubi";
+        reg = <0x600000 0x1FA00000>;
+        compatible = "linux,ubi";
 
-		volumes {
-			ubi_rootdisk: ubi-volume-fit {
-				volname = "fit";
-			};
-		};
-	};
+        volumes {
+            ubi_rootdisk: ubi-volume-fit {
+                volname = "fit";
+            };
+        };
+    };
 };
